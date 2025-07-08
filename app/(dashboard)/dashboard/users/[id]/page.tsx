@@ -3,7 +3,7 @@ import React from 'react'
 function UserInfo({ params }: { params: { id: string } }) {
     const { id } = params;
     return (
-        <div>UserInfo: {id}</div>
+        <h1 className="text-3xl">UserInfo: {id}</h1>
     )
 }
 
