@@ -1,6 +1,6 @@
 import { auth, signIn, signOut } from "@/auth";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 async function Navbar() {
 
@@ -10,7 +10,7 @@ async function Navbar() {
     <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
         <Link href="/">
-          <Image src="logo.png" alt={"YC-logo"}
+          <img src="logo.png" alt={"YC-logo"}
             height={30} width={144}
           />
         </Link>
@@ -28,8 +28,7 @@ async function Navbar() {
                   <button type="submit">
                     <span>Logout</span>
                   </button>
-                </form>
-
+                </form> 
                 <Link href={`/user/${session?.id}`}>
                   <span>{session?.user?.name}</span>
                 </Link>
